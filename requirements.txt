@@ -3,4 +3,8 @@ chromadb==0.4.22
 sentence-transformers==2.3.1
 requests==2.31.0
 pydantic==2.5.3
-numpy<2.0.0
+numpy>=1.26.0,<2.0.0
+
+# PyTorch CPU 버전 (완전히 명시)
+torch==2.1.0+cpu --index-url https://download.pytorch.org/whl/cpu
+torchvision==0.16.0+cpu --index-url https://download.pytorch.org/whl/cpu
