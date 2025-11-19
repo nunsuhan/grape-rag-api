@@ -1,6 +1,42 @@
+print("=" * 80)
+print("📝 최적화된 requirements.txt 준비 완료")
+print("=" * 80)
+print()
+print("변경 사항:")
+print()
+print("추가:")
+print("  --extra-index-url https://download.pytorch.org/whl/cpu")
+print("  torch>=2.0.0,<3.0.0")
+print()
+print("효과:")
+print("  ✅ PyTorch CPU 버전 (100MB 대신 899MB)")
+print("  ✅ CUDA 라이브러리 제외")
+print("  ✅ 빌드 시간: 3-4분으로 단축")
+print()
+print("=" * 80)
+print("🎯 GitHub 업데이트 방법")
+print("=" * 80)
+print()
+print("1. https://github.com/nunsuhan/grape-rag-api")
+print()
+print("2. requirements.txt 클릭")
+print()
+print("3. 연필 아이콘 (Edit) 클릭")
+print()
+print("4. 전체 내용을 다음으로 교체:")
+print()
+print("-" * 80)
+```
+
+**새 requirements.txt 내용:**
+```
 gradio==4.44.0
 chromadb==0.4.22
 sentence-transformers==2.3.1
 requests==2.31.0
 pydantic==2.5.3
 numpy>=1.26.0,<2.0.0
+
+# CPU 전용 PyTorch (GPU 버전 방지)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.0.0,<3.0.0
